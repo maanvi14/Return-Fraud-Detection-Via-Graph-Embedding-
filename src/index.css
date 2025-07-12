@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  
+  .metric-card {
+    @apply card hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+  
+  .trust-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .trust-highly-trusted {
+    @apply bg-success-100 text-success-700;
+  }
+  
+  .trust-trusted {
+    @apply bg-primary-100 text-primary-700;
+  }
+  
+  .trust-watchlist {
+    @apply bg-warning-100 text-warning-700;
+  }
+  
+  .trust-high-risk {
+    @apply bg-danger-100 text-danger-700;
+  }
+  
+  .trust-banned {
+    @apply bg-gray-800 text-white;
+  }
+}
