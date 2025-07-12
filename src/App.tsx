@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard';
 import UserAnalysis from './components/UserAnalysis';
 import FraudRings from './components/FraudRings';
 import TrustScoring from './components/TrustScoring';
+import LLMAssessment from './components/LLMAssessment';
 import Navigation from './components/Navigation';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         return <FraudRings />;
       case 'trust':
         return <TrustScoring />;
+      case 'llm':
+        return <LLMAssessment />;
       default:
         return <Dashboard />;
     }

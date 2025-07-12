@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, Users, Network, Shield } from 'lucide-react';
+import { BarChart3, Users, Network, Shield, Brain } from 'lucide-react';
 
 interface NavigationProps {
   activeTab: string;
@@ -12,6 +12,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
     { id: 'analysis', label: 'User Analysis', icon: Users },
     { id: 'rings', label: 'Fraud Rings', icon: Network },
     { id: 'trust', label: 'Trust Scoring', icon: Shield },
+    { id: 'llm', label: 'LLM Assessment', icon: Brain },
   ];
 
   return (
