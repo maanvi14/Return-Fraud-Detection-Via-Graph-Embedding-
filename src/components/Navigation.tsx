@@ -8,7 +8,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
   const tabs = [
-    { id: 'dashboard', label: 'Overview', icon: BarChart3 },
+    { id: 'dashboard', label: 'Dashboard', icon: BarChart3 },
     { id: 'analysis', label: 'User Analysis', icon: Users },
     { id: 'rings', label: 'Fraud Rings', icon: Network },
     { id: 'trust', label: 'Trust Scoring', icon: Shield },
